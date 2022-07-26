@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>recipe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="float-end mt-3 mb-3">
+            <a class="btn btn-danger" href="/logout">logout</a>
+            <a class="btn btn-secondary" href="/recipes">home</a>
+        </div>
+        <h2 class="text-center">recipe {{recipe.id}}</h2>
+        <p>name {{recipe.name}}</p>
+        <p>description: {{recipe.description}}</p>
+        <p>instrucrions: {{recipe.instrucrions}}</p>
+        <p>date_made: {{recipe.date_made}}</p>
+        <p>under_30: {{recipe.under_30}}</p>
+
+        <p>Created ON: {{recipe.created_at.strftime("%b %d %Y")}}</p>
+        <p>Last Updated: {{  recipe.updated_at.strftime("%b %d %Y")}}</p>
+    </div>
+</body>
+</html>
